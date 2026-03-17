@@ -1,0 +1,139 @@
+/*!Reset css start*/
+*
+{
+margin:0;
+padding:0;
+box-sizing: border-box;
+outline:none;
+border:none;
+text-decoration: none;
+list-style: none;
+transition: 0.2s ease;
+font-style:initial;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color:#030303be;
+}
+/*!Reset css end*/
+
+
+
+
+
+/*! Main html style codes start*/
+html
+{
+  font-size:62.5%;
+  overflow-x:hidden;
+  scroll-padding-top:9rem;
+  scroll-behavior: smooth;
+}
+/*! Main html style codes end*/
+
+
+
+
+
+
+
+
+
+
+
+/*! Body Style codes start*/
+body{
+   background-color:rgb(176, 27, 27);
+   background-size: cover;
+   background-repeat: no-repeat;
+    background-image: url("../Img/image.jpg");   
+   
+}
+/*! Body Style codes End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*! Header style codes start*/
+
+/*?Logo start*/
+.header .Logo img 
+{
+    height:10rem;
+   
+}
+/*?Logo end*/
+
+
+
+/*? Main header style codes start*/
+.header
+{
+background-color: rgb(26, 25, 25);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding:0 7%;
+position: sticky;
+top:0;
+z-index: 1000;
+margin:2rem 7%;
+border-radius: 1rem;
+box-shadow: 0px 0px 20px 0.5px rgb(176, 27, 27);
+}
+/*? Main header style codes End*/
+
+
+/*? navbar style codes start*/
+.navbar a 
+{
+color:white;
+margin: 0 1rem;
+font-size:1.4rem;
+border-bottom:0.1rem solid transparent;
+}
+
+
+.navbar a:hover
+{
+    border-color:rgb(176, 27, 27);
+    color:rgb(176, 27, 27);
+    padding-bottom:5px;
+}
+
+.navbar .active 
+{
+    padding-bottom:0.5rem;
+    border-color:rgb(5, 78, 5);
+}
+
+/*? navbar style codes End*/
+
+
+
+
+/*? header buttons style codes start*/
+.buttons button
+{
+ cursor:pointer;
+ border: 2px solid rgb(176, 27, 27);
+ background-color: transparent;
+ padding:0.2rem;
+ margin: 0 0.2rem;
+ border-radius: 0.5rem;
+
+}
+/*? header buttons style codes end*/
+
+
+/*! Header style codes End*/
