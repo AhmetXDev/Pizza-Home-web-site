@@ -1,4 +1,3 @@
-/*!Reset css start*/
 *
 {
 margin:0;
@@ -13,13 +12,7 @@ font-style:initial;
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 color:#030303be;
 }
-/*!Reset css end*/
 
-
-
-
-
-/*! Main html style codes start*/
 html
 {
   font-size:62.5%;
@@ -27,56 +20,52 @@ html
   scroll-padding-top:9rem;
   scroll-behavior: smooth;
 }
-/*! Main html style codes end*/
+html::-webkit-scrollbar
+{
+    width:0.8rem;
+    background-color: rgb(26, 25, 25);
 
+}
+html::-webkit-scrollbar-thumb
+{
+ background-color: wheat;
+ border-radius: 1rem;
+}
+section
+{
+    padding: 3.5rem 7%;
+}
 
-
-
-
-
-
-
-
-
-
-/*! Body Style codes start*/
 body{
    background-color:rgb(176, 27, 27);
-   background-size: cover;
-   background-repeat: no-repeat;
-    background-image: url("../Img/image.jpg");   
+
    
 }
-/*! Body Style codes End*/
 
+.btn
+{
+    margin-top:1rem;
+    display:inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color:rgb(176, 27, 27);
+    background-color: rgb(26, 25, 25);
+    border:2px solid rgb(176, 27, 27);
+    font-size:1.5rem;
+}
+.btn:hover
+{
+    border:2px solid rgb(5, 78, 5);
+    color:wheat;
+    opacity: 0.9;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*! Header style codes start*/
-
-/*?Logo start*/
 .header .Logo img 
 {
     height:10rem;
    
 }
-/*?Logo end*/
 
-
-
-/*? Main header style codes start*/
 .header
 {
 background-color: rgb(26, 25, 25);
@@ -91,18 +80,19 @@ margin:2rem 7%;
 border-radius: 1rem;
 box-shadow: 0px 0px 20px 0.5px rgb(176, 27, 27);
 }
-/*? Main header style codes End*/
 
-
-/*? navbar style codes start*/
 .navbar a 
 {
-color:white;
+color:wheat;
 margin: 0 1rem;
 font-size:1.4rem;
 border-bottom:0.1rem solid transparent;
 }
 
+#menubarbtn
+{
+    display: none;
+}
 
 .navbar a:hover
 {
@@ -117,12 +107,6 @@ border-bottom:0.1rem solid transparent;
     border-color:rgb(5, 78, 5);
 }
 
-/*? navbar style codes End*/
-
-
-
-
-/*? header buttons style codes start*/
 .buttons button
 {
  cursor:pointer;
@@ -133,7 +117,354 @@ border-bottom:0.1rem solid transparent;
  border-radius: 0.5rem;
 
 }
-/*? header buttons style codes end*/
+
+.Home
+{
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+      background-size: cover;
+   background-repeat: no-repeat;
+    background-image: url("../Img/image.jpg");   
+    margin-top:-14.5rem;
+    display: flex;
+    align-items: center;
+    
+}
+.content
+{
+    max-width: 60rem;
+
+}
+.Home .content h3 
+{
+  
+    font-size:5rem;
+     color:wheat;
+    
+}
+.Home .content p 
+{
+    font-size:2rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+.Home .content a 
+{
+    margin-top:1rem;
+    display:inline-block;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    color:rgb(176, 27, 27);
+    background-color: rgb(26, 25, 25);
+    border:2px solid rgb(176, 27, 27);
+    font-size:1.7rem;
+}
+.Home .content a:hover
+{
+    border: 2px solid rgb(5, 78, 5);
+    color:wheat;
+} 
+
+.boxcontainer
+{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+}
+.box-head img
+{
+width:99.4%;
+height:35rem;
+border-radius: 0.5rem;
+box-shadow: 3px 3px 15px 5px black;
+margin-bottom:1rem;
+}
+.box
+{
+    margin-left:3rem;
+    margin-top:2rem;
+    background-color: wheat;
+    padding:2rem;
+    border-radius: 0.5rem;
+    box-shadow: 13px 3px 15px 5px black;
+    justify-content: space-between;
+    height:54rem;
+
+}
+.menucategorytitle
+{
+    margin-top:2rem;
+    font-size:2rem;
+}
+.box-head h3 
+{
+    font-size:1.5rem;
+}
+.price
+{
+    font-size:2.5rem;
+    color:rgb(5, 78, 5);
+}
+.price span 
+{
+    text-decoration: line-through;
+    font-size:1.9rem;
+    color:rgb(176, 27, 27);
+}
+
+.Heading
+{
+    color:white;
+    text-transform: uppercase;
+    font-size:4rem;
+    margin-bottom:3.5rem;
+    border-bottom: 0.1rem solid white;
+}
+.Heading span 
+{
+    text-transform: uppercase;
+    color:rgb(26, 25, 25);
+}
+
+.star
+{
+    font-size:1.5rem;
+    border-radius: 0.5rem;
+    color:rgb(26, 25, 25);
+    padding:0.6rem;
+}
+.Comment
+{
+    background-color: rgb(26, 25, 25);
+    margin-top:1rem;
+    padding:1rem;
+    height:auto;
+    color:wheat;
+    font-size:1.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.5px 0.5px 10px 1px goldenrod;
+    
+}
+.userprofilphoto{
+    width:8rem;
+    height:8rem;
+    margin-top:0rem;
+    margin-left:0rem;
+    background-color: rgb(26, 25, 25);
+    border-radius: 100%;
+}
+.username
+{
+    font-size:2rem;
+    margin-left:2rem;
+    margin-top:0rem;
+    color:rgb(26, 25, 25);
+}
+.userprofile
+{
+    width:35.5rem;
+    height:13rem;
+    margin-top:0.4rem;
+    display: flex;
+    align-items: center;
+}
+.Comment:hover
+{
+      transform:scale(1.2)
+}
+
+.raw 
+{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+.Rimg
+{
+    flex: 1 1 45rem;
+    width:50rem;
+    height:40rem;
+    border-radius: 1rem;
+    box-shadow: 13px 3px 15px 5px black;
+
+}
+.content
+{
+    flex: 1 1 45rem;
+    border-radius: 1rem;
+    margin-left:1rem;
+  
+
+}
+.content h3
+{
+font-size:3rem;
+margin-left:1rem;
+margin-top:1rem;
+text-decoration:underline;
+color:wheat;
+}
+.content p 
+{
+    font-size: 1.4rem;
+    margin-left:1rem;
+    color:wheat;
+    margin-top:3rem;
+
+}
+.content button 
+{
+    margin-left:1rem;
+    margin-top:1rem;
+    cursor:pointer;
+}
+
+.raw iframe
+{
+    border-radius: 1rem;
+    box-shadow: 13px 3px 15px 5px black;
+    height:50rem;
+    
+}
+.contactform
+{
+    width:62rem;
+    height:50rem;
+    margin-left:3rem;
+    border-radius: 1rem;
+    background-color: black;
+text-align: center;
+
+}
+.contactform h3 
+{
+    color:white;
+    margin-top:5rem;
+    font-size:2rem;
+}
+.contactform input 
+{
+    padding:0.8rem;
+    width:40rem;
+    border-radius: 0.4rem;
+    background-color: wheat;
+}
+.buton
+{
+   width: 10rem;
+   color:rgb(26, 25, 25);
+   font-size:large;
+   padding:0.3rem;
+   cursor:pointer;
+   background-color: wheat;
+   border-radius: 0.5rem;
+   border: 2px solid rgb(5, 78, 5);
+}
+.buton:hover
+{
+    box-shadow: 1px 3px 15px 2px rgb(5, 78, 5);
+    background-color: white;
+}
+
+.Blog .boxcontainer
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem;
+}
+.Blog .boxcontainer .box .image img 
+{
+    width:35.5rem;
+    box-shadow: 0.5px 3px 20px 0.5px wheat;
+    border-radius: 0.5rem;
+    height:15rem;
+   
+}
+
+.Blog .boxcontainer .box 
+{
+    width:40rem;
+    height:35rem;
+    background-color: rgb(26, 25, 25);
+   
+}
+
+.Blog .boxcontainer .box .content p 
+{
+    color:rgb(26, 25, 25);
+    color:wheat;
+}
+.Blog .boxcontainer .box .content .btn 
+{
+    margin-left:1rem;
+    background-color: wheat;
+    color:rgb(26, 25, 25);
+    border:none;
+}
+
+.Blog .boxcontainer .box .image img:hover 
+{
+    transform: scale(1.2);
+}
+
+.Footer
+{
+    background-color: rgb(26, 25, 25);
+    text-align: center;
+    height:18rem;
+}
+.Fsearch
+{
+    padding:0.7rem;
+    border-radius: 0.5rem;
+    width:20rem;
+    border:none;
+}
+.search .btn 
+{
+    margin-left:0.3rem;
+    padding:0.4rem;
+    border-radius: 0.5rem;
+    background-color: wheat;
+    border:none;
+    color:rgb(26, 25, 25);
+    cursor:pointer;
+}
+.share
+{
+    margin-top:1.5rem;
+}
+.share a 
+{
+font-size: large;
+border:2px solid wheat;
+border-radius: 100%;
+}
+.share a:hover
+{
+    background-color: rgb(176, 27, 27);
+}
+
+@media(max-width: 991px)
+{
+    html{
+      font-size:55%;
+    }
+    .header
+    {
+        padding:1.5rem 2 rem;
+    }
+    .header .Logo img
+    {
+       height:7rem;
+    }
+    section
+    {
+        padding:2rem;
+    }
+    
+
+}
 
 
-/*! Header style codes End*/
+
